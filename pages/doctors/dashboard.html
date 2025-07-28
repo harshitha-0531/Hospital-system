@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Same head as index.html -->
+    <link rel="stylesheet" href="../../assets/css/dashboard.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+    
+    <div class="dashboard-container">
+        <div id="sidebar-container"></div>
+        
+        <main class="main-content">
+            <div class="d-flex justify-content-between mb-4">
+                <h2>Doctor Dashboard</h2>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="doctorActions">
+                        <i class="fas fa-user-md me-2"></i>Dr. Smith
+                    </button>
+                </div>
+            </div>
+            
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <div class="card text-white bg-primary">
+                        <div class="card-body">
+                            <h5 class="card-title">Today's Appointments</h5>
+                            <h2 class="card-text" id="todayAppointments">0</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- More stats cards -->
+            </div>
+            
+            <div class="card">
+                <div class="card-header d-flex justify-content-between">
+                    <h5>Upcoming Consultations</h5>
+                    <a href="../appointments/schedule.html" class="btn btn-sm btn-primary">
+                        <i class="fas fa-plus me-1"></i>New Appointment
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover" id="appointmentsTable">
+                            <thead>
+                                <tr>
+                                    <th>Patient</th>
+                                    <th>Time</th>
+                                    <th>Reason</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Filled by JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../../assets/js/doctor.js"></script>
+</body>
+</html>

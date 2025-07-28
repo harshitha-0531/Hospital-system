@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Same head as index.html -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+    
+    <div class="dashboard-container">
+        <div id="sidebar-container"></div>
+        
+        <main class="main-content">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Book Appointment</h2>
+                </div>
+                <div class="card-body">
+                    <form id="appointmentForm">
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="patientSelect" class="form-label">Patient</label>
+                                <select class="form-select" id="patientSelect" required>
+                                    <option value="">Select Patient</option>
+                                    <!-- Filled by JavaScript -->
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="doctorSelect" class="form-label">Doctor</label>
+                                <select class="form-select" id="doctorSelect" required>
+                                    <option value="">Select Doctor</option>
+                                    <!-- Filled by JavaScript -->
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="appointmentDate" class="form-label">Date & Time</label>
+                                <input type="datetime-local" class="form-control" id="appointmentDate" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="reason" class="form-label">Reason</label>
+                                <input type="text" class="form-control" id="reason" required>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Book Appointment</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="../../assets/js/appointment.js"></script>
+</body>
+</html>

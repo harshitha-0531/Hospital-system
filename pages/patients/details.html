@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Same head as index.html -->
+    <link rel="stylesheet" href="../../assets/css/dashboard.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+    
+    <div class="dashboard-container">
+        <div id="sidebar-container"></div>
+        
+        <main class="main-content">
+            <div class="d-flex justify-content-between mb-4">
+                <h2>Patient Medical Record</h2>
+                <div>
+                    <button class="btn btn-primary me-2" id="printRecord">
+                        <i class="fas fa-print me-2"></i>Print
+                    </button>
+                    <button class="btn btn-success" id="addRecord">
+                        <i class="fas fa-plus me-2"></i>Add Entry
+                    </button>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h5>Patient Information</h5>
+                        </div>
+                        <div class="card-body" id="patientInfo">
+                            <!-- Filled by JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Quick Actions</h5>
+                        </div>
+                        <div class="card-body">
+                            <button class="btn btn-outline-primary w-100 mb-2">
+                                <i class="fas fa-calendar-plus me-2"></i>New Appointment
+                            </button>
+                            <button class="btn btn-outline-success w-100 mb-2">
+                                <i class="fas fa-prescription me-2"></i>New Prescription
+                            </button>
+                            <button class="btn btn-outline-info w-100">
+                                <i class="fas fa-flask me-2"></i>Lab Test
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <ul class="nav nav-tabs card-header-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#medicalHistory" data-bs-toggle="tab">Medical History</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#appointments" data-bs-toggle="tab">Appointments</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#prescriptions" data-bs-toggle="tab">Prescriptions</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body tab-content">
+                            <div class="tab-pane fade show active" id="medicalHistory">
+                                <!-- Medical history content -->
+                            </div>
+                            <div class="tab-pane fade" id="appointments">
+                                <!-- Appointments content -->
+                            </div>
+                            <div class="tab-pane fade" id="prescriptions">
+                                <!-- Prescriptions content -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../../assets/js/ehr.js"></script>
+</body>
+</html>

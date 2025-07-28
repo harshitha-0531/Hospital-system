@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Same head as index.html -->
+    <link rel="stylesheet" href="../../assets/css/dashboard.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+    
+    <div class="dashboard-container">
+        <div id="sidebar-container"></div>
+        
+        <main class="main-content">
+            <div class="d-flex justify-content-between mb-4">
+                <h2>Patient Management</h2>
+                <a href="register.html" class="btn btn-primary">
+                    <i class="fas fa-plus me-2"></i>New Patient
+                </a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h5>Patient Records</h5>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover" id="patientsTable">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Age</th>
+                                    <th>Last Visit</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Filled by JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../../assets/js/patient.js"></script>
+</body>
+</html>
